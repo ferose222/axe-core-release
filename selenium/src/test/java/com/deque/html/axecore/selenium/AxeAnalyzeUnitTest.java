@@ -38,6 +38,7 @@ public class AxeAnalyzeUnitTest {
   public void testInitialize() {
     ChromeDriverService service = ChromeDriverService.createDefaultService();
     ChromeOptions options = new ChromeOptions();
+    options.setBinary("/usr/local/bin/chromedriver");
     options.addArguments(
         "--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
     this.webDriver = new ChromeDriver(service, options);

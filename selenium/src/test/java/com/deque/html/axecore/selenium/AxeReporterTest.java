@@ -50,6 +50,7 @@ public class AxeReporterTest {
   public void setUp() {
     // ChromeDriver needed to test for Shadow DOM testing support
     ChromeOptions options = new ChromeOptions();
+    options.setBinary("/usr/local/bin/chromedriver");
     options.addArguments(
         "--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
     webDriver = new ChromeDriver(options);

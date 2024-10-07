@@ -635,6 +635,7 @@ public class Axe43xIntegrationTest {
   private void initDriver(String browser) {
     if (browser.toUpperCase().equals("CHROME")) {
       ChromeOptions options = new ChromeOptions();
+      options.setBinary("/usr/local/bin/chromedriver");
       options.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.ACCEPT);
       options.addArguments(
           "--remote-allow-origins=*",

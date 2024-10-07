@@ -85,8 +85,7 @@ public class AxeBuilderUnitTest {
         "--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
     this.webDriver = new ChromeDriver(service, options);
     this.webDriver.get(
-        "file:///"
-            + new File("src/test/resources/html/integration-test-target.html").getAbsolutePath());
+        "file:///" + new File("src/test/resources/html/integration-test-target.html").getAbsolutePath());
     this.javascriptExecutor = (JavascriptExecutor) this.webDriver;
     this.targetLocator = this.webDriver.switchTo();
   }
