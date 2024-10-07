@@ -53,8 +53,13 @@
     <!-- Selenium DevTools for Chrome version 129 -->
     <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-devtools-v129</artifactId>
-        <version>4.13.0</version> <!-- Ensure this matches your Selenium version -->
+        <artifactId>selenium-devtools-v114</artifactId>
+        <version>4.12.1</version> <!-- Ensure this matches your Selenium version -->
+    </dependency>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.12.1</version>
     </dependency>
   </dependencies>
   <profiles>
